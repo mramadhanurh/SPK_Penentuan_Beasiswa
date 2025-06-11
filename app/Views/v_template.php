@@ -80,6 +80,12 @@
                             </span>
                             <h4 class="text-section">Master Data</h4>
                         </li>
+                        <li class="nav-item <?= isset($menu) && $menu == 'kriteria' ? 'active' : '' ?>">
+                            <a href="<?= base_url('Kriteria') ?>">
+                                <i class="fas fa-desktop"></i>
+                                <p>Kriteria</p>
+                            </a>
+                        </li>
                         <li class="nav-item <?= isset($menu) && $menu == 'user' ? 'active' : '' ?>">
                             <a href="<?= base_url('User') ?>">
                                 <i class="fas fa-desktop"></i>
