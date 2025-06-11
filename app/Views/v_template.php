@@ -62,13 +62,6 @@
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <ul class="nav nav-secondary">
-                    
-                        <li class="nav-item active">
-                            <a href="#">
-                                <i class="fas fa-home"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
 
                     <?php $level = session()->get('level'); ?>
 
@@ -86,18 +79,6 @@
                                 <i class="fa fa-ellipsis-h"></i>
                             </span>
                             <h4 class="text-section">Master Data</h4>
-                        </li>
-                        <li class="nav-item <?= isset($menu) && $menu == 'kategori' ? 'active' : '' ?>">
-                            <a href="<?= base_url('Kategori') ?>">
-                                <i class="fas fa-desktop"></i>
-                                <p>Kategori</p>
-                            </a>
-                        </li>
-                        <li class="nav-item <?= isset($menu) && $menu == 'jadwal' ? 'active' : '' ?>">
-                            <a href="<?= base_url('Jadwal') ?>">
-                                <i class="fas fa-desktop"></i>
-                                <p>Jadwal</p>
-                            </a>
                         </li>
                         <li class="nav-item <?= isset($menu) && $menu == 'user' ? 'active' : '' ?>">
                             <a href="<?= base_url('User') ?>">
