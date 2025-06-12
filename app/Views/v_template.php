@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dashboard - SPK Penentuan Beasiswa</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="<?= base_url('admin') ?>/assets/img/Logo_Posyandu.png" type="image/x-icon" />
+    <link rel="icon" href="<?= base_url('admin') ?>/assets/img/logo_beasiswa_bi.png" type="image/x-icon" />
 
     <!-- Fonts and icons -->
     <script src="<?= base_url('admin') ?>/assets/js/plugin/webfont/webfont.min.js"></script>
@@ -86,10 +86,34 @@
                                 <p>Kriteria</p>
                             </a>
                         </li>
+                        <li class="nav-item <?= isset($menu) && $menu == 'sub_kriteria' ? 'active' : '' ?>">
+                            <a href="<?= base_url('SubKriteria') ?>">
+                                <i class="fas fa-desktop"></i>
+                                <p>Sub Kriteria</p>
+                            </a>
+                        </li>
                         <li class="nav-item <?= isset($menu) && $menu == 'user' ? 'active' : '' ?>">
                             <a href="<?= base_url('User') ?>">
                                 <i class="fas fa-desktop"></i>
                                 <p>Pengguna</p>
+                            </a>
+                        </li>
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">Sistem AHP</h4>
+                        </li>
+                        <li class="nav-item <?= isset($menu) && $menu == 'ahp' ? 'active' : '' ?>">
+                            <a href="<?= base_url('AHPController') ?>">
+                                <i class="fas fa-cog"></i>
+                                <p>Pairwise Kriteria</p>
+                            </a>
+                        </li>
+                        <li class="nav-item <?= isset($menu) && $menu == 'hitung_bobot' ? 'active' : '' ?>">
+                            <a href="<?= base_url('AHPController/hitungBobot') ?>">
+                                <i class="fas fa-cog"></i>
+                                <p>Matriks & Bobot</p>
                             </a>
                         </li>
 
