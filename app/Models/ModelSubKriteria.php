@@ -6,6 +6,10 @@ use CodeIgniter\Model;
 
 class ModelSubKriteria extends Model
 {
+    protected $table      = 'tbl_sub_kriteria';
+    protected $primaryKey = 'id_sub_kriteria';
+    protected $allowedFields = ['id_kriteria', 'nama_sub_kriteria', 'bobot_sub_kriteria'];
+
     public function AllData()
     {
         return $this->db->table('tbl_sub_kriteria')

@@ -116,6 +116,12 @@
                                 <p>Matriks & Bobot</p>
                             </a>
                         </li>
+                        <li class="nav-item <?= isset($menu) && $menu == 'penilaian' ? 'active' : '' ?>">
+                            <a href="<?= base_url('PenilaianController') ?>">
+                                <i class="fas fa-cog"></i>
+                                <p>Penilaian Mahasiswa</p>
+                            </a>
+                        </li>
 
                     <?php endif; ?>
 
