@@ -8,7 +8,7 @@ class ModelUser extends Model
 {
     protected $table = 'tbl_user';
     protected $primaryKey = 'id_user';
-    protected $allowedFields = ['nama_user', 'email', 'password', 'level'];
+    protected $allowedFields = ['nama_user', 'id_mahasiswa', 'email', 'password', 'level'];
 
     public function AllData()
     {
