@@ -122,14 +122,20 @@
                                 <p>Penilaian Mahasiswa</p>
                             </a>
                         </li>
+                        <li class="nav-item <?= isset($menu) && $menu == 'hasil' ? 'active' : '' ?>">
+                            <a href="<?= base_url('HasilAHPController') ?>">
+                                <i class="fas fa-cog"></i>
+                                <p>Hasil Nilai Ranking</p>
+                            </a>
+                        </li>
 
                     <?php endif; ?>
 
-                    <!-- Untuk Petugas (Level 2) -->
+                    <!-- Untuk Panitia (Level 2) -->
                     <?php if ($level == 2): ?>
 
-                        <li class="nav-item <?= isset($menu) && $menu == 'petugas' ? 'active' : '' ?>">
-                            <a href="<?= base_url('Petugas') ?>">
+                        <li class="nav-item <?= isset($menu) && $menu == 'panitia' ? 'active' : '' ?>">
+                            <a href="<?= base_url('Panitia') ?>">
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
@@ -138,58 +144,21 @@
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
                             </span>
-                            <h4 class="text-section">Petugas Posyandu</h4>
+                            <h4 class="text-section">Sistem AHP</h4>
                         </li>
-                        <li class="nav-item <?= isset($menu) && $menu == 'ibu' ? 'active' : '' ?>">
-                            <a href="<?= base_url('Ibu') ?>">
+                        <li class="nav-item <?= isset($menu) && $menu == 'kriteria' ? 'active' : '' ?>">
+                            <a href="<?= base_url('Kriteria') ?>">
                                 <i class="fas fa-desktop"></i>
-                                <p>Catat Data Ibu</p>
+                                <p>Alternatif</p>
                             </a>
                         </li>
-                        <li class="nav-item <?= isset($menu) && $menu == 'anak' ? 'active' : '' ?>">
-                            <a href="<?= base_url('Anak') ?>">
-                                <i class="fas fa-desktop"></i>
-                                <p>Catat Data Anak</p>
+                        <li class="nav-item <?= isset($menu) && $menu == 'hasil' ? 'active' : '' ?>">
+                            <a href="<?= base_url('HasilAHPController') ?>">
+                                <i class="fas fa-cog"></i>
+                                <p>Hasil Nilai Ranking</p>
                             </a>
                         </li>
-
-                        <?php
-                            $isPemeriksaanActive = isset($menu) && in_array($menu, ['jenis', 'pemeriksaan', 'detail']);
-                        ?>
-
-                        <li class="nav-item <?= $isPemeriksaanActive ? 'active submenu' : '' ?>">
-                            <a data-bs-toggle="collapse" href="#sidebarLayouts">
-                                <i class="fas fa-stethoscope"></i>
-                                <p>Pemeriksaan</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse <?= $isPemeriksaanActive ? 'show' : '' ?>" id="sidebarLayouts">
-                                <ul class="nav nav-collapse">
-                                    <li class="<?= isset($menu) && $menu == 'jenis' ? 'active' : '' ?>">
-                                        <a href="<?= base_url('Jenispemeriksaan') ?>">
-                                            <span class="sub-item">Jenis Pemeriksaan</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?= isset($menu) && $menu == 'pemeriksaan' ? 'active' : '' ?>">
-                                        <a href="<?= base_url('Pemeriksaan') ?>">
-                                            <span class="sub-item">Pemeriksaan</span>
-                                        </a>
-                                    </li>
-                                    <li class="<?= isset($menu) && $menu == 'detail' ? 'active' : '' ?>">
-                                        <a href="<?= base_url('Detailpemeriksaan') ?>">
-                                            <span class="sub-item">Cek Pemeriksaan</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item <?= isset($menu) && $menu == 'laporan' ? 'active' : '' ?>">
-                            <a href="<?= base_url('Laporan') ?>">
-                                <i class="fas fa-desktop"></i>
-                                <p>Laporan</p>
-                            </a>
-                        </li>
+                        
                     <?php endif; ?>
 
                     <!-- Untuk Kader (Level 3) -->
