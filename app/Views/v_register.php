@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - SPK Penentuan Beasiswa</title>
+    <title>Register - SPK Penentuan Beasiswa</title>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/logins/login-9/assets/css/login-9.css">
 </head>
@@ -37,8 +37,8 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mb-4">
-                                        <h3>Login</h3>
-                                        <p>Silahkan login terlebih dahulu</p>
+                                        <h3>Register</h3>
+                                        <p>Silahkan register terlebih dahulu</p>
                                     </div>
                                 </div>
                             </div>
@@ -73,30 +73,36 @@
 
                             ?>
 
-                            <?php echo form_open('Home/CekLogin') ?>
-                            <div class="row gy-3 overflow-hidden">
-                                <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                                        <label for="email" class="form-label">Email</label>
+                            <form action="<?= base_url('Home/ProsesRegister') ?>" method="post">
+                                <div class="row gy-3 overflow-hidden">
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="nama_user" id="nama_user" placeholder="Nama Lengkap">
+                                            <label for="nama_user" class="form-label">Nama Lengkap</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            <label for="email" class="form-label">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                                            <label for="password" class="form-label">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary btn-lg" type="submit">Register</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-                                        <label for="password" class="form-label">Password</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" type="submit">Log in</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php form_close() ?>
+                            </form>
 
                             <br>
-                            <a href="<?= base_url('/Home/Register') ?>" class="text-center">Belum memiliki akun?</a>
+                            <a href="<?= base_url('/Home') ?>" class="text-center">Sudah memiliki akun?</a>
                         </div>
                     </div>
                 </div>
