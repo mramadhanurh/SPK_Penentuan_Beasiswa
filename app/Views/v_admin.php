@@ -16,13 +16,13 @@
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="fas fa-users"></i>
+                                    <i class="far fa-check-circle"></i>
                                 </div>
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Visitors</p>
-                                    <h4 class="card-title">1,294</h4>
+                                    <p class="card-category">Kriteria</p>
+                                    <h4 class="card-title"><?= $jml_kriteria ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -40,8 +40,8 @@
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Subscribers</p>
-                                    <h4 class="card-title">1303</h4>
+                                    <p class="card-category">Sub Kriteria</p>
+                                    <h4 class="card-title"><?= $jml_sub_kriteria ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +59,8 @@
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Sales</p>
-                                    <h4 class="card-title">$ 1,345</h4>
+                                    <p class="card-category">Mahasiswa</p>
+                                    <h4 class="card-title"><?= $jml_mahasiswa ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -73,13 +73,13 @@
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="far fa-check-circle"></i>
+                                    <i class="fas fa-users"></i>
                                 </div>
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Order</p>
-                                    <h4 class="card-title">576</h4>
+                                    <p class="card-category">User</p>
+                                    <h4 class="card-title"><?= $jml_user ?></h4>
                                 </div>
                             </div>
                         </div>
